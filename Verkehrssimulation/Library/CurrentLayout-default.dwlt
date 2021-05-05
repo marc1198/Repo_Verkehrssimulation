@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 59
+  controlID: 104
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 60
+  controlID: 105
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 61
+  controlID: 106
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,8 +266,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 588
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -394,23 +394,29 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: c4330000
       m_LastClickedID: 0
       m_ExpandedIDs: 5cfbffff
+=======
+      m_SelectedIDs: 1cb9ffff
+      m_LastClickedID: -18148
+      m_ExpandedIDs: a2baffff
+>>>>>>> parent of b8349cb (Tests mit Initiate)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Car (3)
+        m_OriginalName: Car (3)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -18260
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -456,9 +462,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 5.0060515, y: -1.452796, z: 4.7737017}
     speed: 2
     m_Value: {x: 5.0060515, y: -1.452796, z: 4.7737017}
+=======
+    m_Target: {x: 5.0963607, y: 0.038518716, z: 6.5001903}
+    speed: 2
+    m_Value: {x: 5.0963607, y: 0.038518716, z: 6.5001903}
+>>>>>>> parent of b8349cb (Tests mit Initiate)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -504,13 +516,19 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 1
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.23412915, y: 0.5403079, z: -0.15966162, w: 0.79231405}
     speed: 2
     m_Value: {x: 0.23412886, y: 0.5403072, z: -0.15966143, w: 0.7923131}
-  m_Size:
-    m_Target: 6.181085
+=======
+    m_Target: {x: 0.18709733, y: 0.49184766, z: -0.109121464, w: 0.843312}
     speed: 2
-    m_Value: 6.181085
+    m_Value: {x: 0.18709713, y: 0.49184713, z: -0.109121345, w: 0.84331113}
+>>>>>>> parent of b8349cb (Tests mit Initiate)
+  m_Size:
+    m_Target: 0.18108417
+    speed: 2
+    m_Value: 0.18108417
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -610,10 +628,17 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 31.499939}
     m_SelectedIDs: 5c3f0000
     m_LastClickedID: 16220
     m_ExpandedIDs: 00000000183f00001a3f00001c3f00001e3f0000203f0000583f000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 6}
+    m_SelectedIDs: b2450000
+    m_LastClickedID: 17842
+    m_ExpandedIDs: 00000000b2450000b4450000b6450000b8450000ba45000000ca9a3b
+>>>>>>> parent of b8349cb (Tests mit Initiate)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -641,7 +666,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000183f00001a3f00001c3f00001e3f0000203f0000
+=======
+    m_ExpandedIDs: 00000000b2450000b4450000b6450000b8450000ba450000
+>>>>>>> parent of b8349cb (Tests mit Initiate)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -668,7 +697,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000183d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

@@ -14,13 +14,19 @@ public class CarController : MonoBehaviour
     private void Awake()
     {
         Body = GetComponent<Rigidbody>();
-
+        drivethisway.Add(0);
+        drivethisway.Add(0);
+        drivethisway.Add(0);
     }
 
-    float InterpolationStraight, InterpolationCircular; bool StraightPossible, CurvePossible;
+    float InterpolationStraight, InterpolationCircular; bool StraightPossible, CurvePossible, driven = false;
     Vector3 Startposition, FromVector, ToVector = Vector3.forward;
 
     Vector3Int Infront, TwoInfront, Left;
+
+    List<int> drivethisway = new List<int>();
+
+    
 
     private void DriveLeftOrRightOrStraight(int Direction)// Direction: streight 0 left -1 right 1 
     {
@@ -50,11 +56,12 @@ public class CarController : MonoBehaviour
                 Body.MovePosition(Startposition - (0.5f - Direction * 0.1f) * FromVector + Vector3.Slerp((0.5f - Direction * 0.1f) * FromVector, (0.5f - Direction * 0.1f) * ToVector, InterpolationCircular));
                 if (InterpolationCircular < 1.012732f) { InterpolationCircular = InterpolationCircular + 0.01f * 1.2732f; }
                 if (InterpolationCircular > 1.012732f) { InterpolationCircular = 0.0f; }
+                driven = true;
             }
         }
 
 
-        if (Direction < 1 & Direction > -1) //Straight code
+        else if (Direction < 1 & Direction > -1) //Straight code
         {
             if ((InterpolationCircular < 0.01f) & StraightPossible)//If not driving a circle and should drive straight
             {
@@ -62,6 +69,7 @@ public class CarController : MonoBehaviour
                 Body.MovePosition(Vector3.Lerp(Startposition, Startposition + ToVector, InterpolationStraight));
                 if (InterpolationStraight < 1.01f) { InterpolationStraight = InterpolationStraight + 0.01f; }
                 if (InterpolationStraight > 1.01f) { InterpolationStraight = 0.0f; }
+                driven = true;
             }
 
         }
@@ -70,7 +78,38 @@ public class CarController : MonoBehaviour
     int RandomDirection;
     private void FixedUpdate()
     {
+        /* Ursprüngliche Programmierung mit Fahrt in zufällige Richtung
         if (InterpolationStraight < 0.01f & InterpolationCircular < 0.01f) { RandomDirection = UnityEngine.Random.Range(-1, 2); }
         DriveLeftOrRightOrStraight(RandomDirection);//UnityEngine.Random.Range(-1, 2)
+        */
+
+        
+        DriveLeftOrRightOrStraight(0);
+        if (driven == true)
+        {
+
+            driven = false;
+        }
+            
+
+        //List<int> richtungsabfolge = new List<int>();
+        /*if (InterpolationStraight < 0.01f & InterpolationCircular < 0.01f) 
+        {
+            
+            
+            richtungsabfolge.Add(0);
+            richtungsabfolge.Add(0);
+            richtungsabfolge.Add(0);
+            richtungsabfolge.Add(0);
+            richtungsabfolge.Add(0);
+            richtungsabfolge.Add(0);
+            
+        }
+        
+        foreach (int wert in richtungsabfolge)
+        {
+            DriveLeftOrRightOrStraight(wert);//UnityEngine.Random.Range(-1, 2)
+        }
+            */
     }
 }
